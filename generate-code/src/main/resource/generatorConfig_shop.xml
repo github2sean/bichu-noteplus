@@ -1,0 +1,37 @@
+<context schema="coral_shop_shiatzy_temp">
+
+	<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+					connectionURL="jdbc:mysql://localhost/bichu_noteplus?characterEncoding=utf8"
+					uName="admin" password="" />
+
+	<!-- cmd:java -jar mybatis-generator-core-1.3.2.jar -configfile generatorConfig.xml -overwrite-->
+	<!-- 数据类型 -->	
+	<javaTypeResolver>
+		<property name="int" value="Integer" />
+		<property name="tinyint" value="Integer" />
+		<property name="bigint" value="Long" />
+		<property name="char" value="String" />
+		<property name="varchar" value="String" />
+		<property name="text" value="String" />
+		<property name="float" value="Float" />
+		<property name="double" value="Double" />
+		<property name="decimal" value="Double" />
+		<property name="smallint" value="Integer" />
+		<property name="timestamp" value="Date" />
+		<property name="datetime" value="Date" />
+		<property name="bit" value="Boolean" />
+	</javaTypeResolver>
+
+	<!--商品模块 开始-->
+	<table tableName="user" domainObjectName="UserDomain"
+		   packageName="com.bichu.noteplus.user" desc="用户" author="sean">
+		<generatedKey column="id" identity="true" />
+		<dto packageName="com.bicuh.noteplus.user.query" />
+	</table>
+	<table tableName="t_goods_color" domainObjectName="GoodsColor"
+		   packageName="com.bichu.noteplus.login_log" desc="登录日志" author="sean">
+		<generatedKey column="id" identity="true" />
+		<dto packageName="com.bicuh.noteplus.login_log.query" />
+	</table>
+	<!--临时模块 结束-->
+</context>

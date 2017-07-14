@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bichu-noteplus.iml" filepath="$PROJECT_DIR$/bichu-noteplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generate-code/generate-code.iml" filepath="$PROJECT_DIR$/generate-code/generate-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/noteplus-common/noteplus-common.iml" filepath="$PROJECT_DIR$/noteplus-common/noteplus-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/noteplus-web/noteplus-web.iml" filepath="$PROJECT_DIR$/noteplus-web/noteplus-web.iml" />
+    </modules>
+  </component>
+</project>
