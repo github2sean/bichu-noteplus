@@ -114,15 +114,15 @@
         <plugins>
             <!-- 生成代码插件：mybatis:mybatis -->
             <plugin>
-                <!--<groupId>com.maven.plugins</groupId>
+                <groupId>com.maven.plugins</groupId>
                 <artifactId>mybatis-generator</artifactId>
-                <version>5.5.4</version>-->
-                <groupId>org.mybatis.generator</groupId>
+                <version>5.5.4</version>
+                <!--<groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.3.2</version>
+                <version>1.3.2</version>-->
 
-                <configuration>
-                    <!--配置文件的位置-->
+                <!--<configuration>
+                    &lt;!&ndash;配置文件的位置&ndash;&gt;
                     <configurationFile>${basedir}/src/main/resources/generatorConfig.xml</configurationFile>
                     <verbose>true</verbose>
                     <overwrite>true</overwrite>
@@ -134,15 +134,15 @@
                             <goal>generate</goal>
                         </goals>
                     </execution>
-                </executions>
+                </executions>-->
 
 
-                <!--<configuration>-->
-                    <!--<mapper>../coral-shop-core/src/main/java</mapper>-->
-                    <!--<sqlmap>../coral-shop-core/src/main/resources/mapper</sqlmap>-->
-                    <!--<vo>../coral-shop-core/src/main/java</vo>-->
-                    <!--<configDirectory>${basedir}/src/main/resources/generatorConfig_shop.xml</configDirectory>-->
-                <!--</configuration>-->
+               <configuration>
+                    <mapper>../coral-shop-core/src/main/java</mapper>
+                    <sqlmap>../coral-shop-core/src/main/resources/mapper</sqlmap>
+                    <vo>../coral-shop-core/src/main/java</vo>
+                    <configDirectory>${basedir}/src/main/resources/generatorConfig_shop.xml</configDirectory>
+               </configuration>
 
                 <dependencies>
                     <dependency>
